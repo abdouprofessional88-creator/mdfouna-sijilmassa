@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="الكسكس الخاص">
+  <defs>
+    <radialGradient id="cbg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#40372c"/><stop offset="1" stop-color="#14110d"/>
+    </radialGradient>
+    <radialGradient id="cmound" cx="0.5" cy="0.6" r="0.8">
+      <stop offset="0" stop-color="#f6e3ac"/><stop offset="1" stop-color="#c9a06a"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cbg)"/>
+  <ellipse cx="400" cy="515" rx="300" ry="32" fill="#000" opacity="0.5"/>
+  <ellipse cx="400" cy="480" rx="290" ry="76" fill="#274e6d"/>
+  <ellipse cx="400" cy="470" rx="290" ry="76" fill="#fbf7ec" stroke="#274e6d" stroke-width="10"/>
+  <!-- couscous mound -->
+  <path d="M180,460 Q400,430 620,460 Q560,300 400,270 Q240,300 180,460 Z" fill="url(#cmound)"/>
+  <g fill="#d9b77c" opacity="0.8">
+    <circle cx="300" cy="400" r="4"/><circle cx="350" cy="370" r="4"/><circle cx="420" cy="390" r="4"/><circle cx="470" cy="410" r="4"/><circle cx="390" cy="430" r="4"/>
+  </g>
+  <!-- carrots -->
+  <g fill="#e07a2e" stroke="#a84a1c" stroke-width="3">
+    <rect x="245" y="380" width="90" height="22" rx="11" transform="rotate(-24 245 380)"/>
+    <rect x="480" y="375" width="90" height="22" rx="11" transform="rotate(22 480 375)"/>
+  </g>
+  <!-- zucchini -->
+  <g fill="#4c6b2e">
+    <rect x="270" y="430" width="80" height="24" rx="12" transform="rotate(-10 270 430)"/>
+    <rect x="455" y="430" width="80" height="24" rx="12" transform="rotate(10 455 430)"/>
+  </g>
+  <!-- meat -->
+  <ellipse cx="400" cy="320" rx="62" ry="48" fill="#7a3f1c"/>
+  <ellipse cx="385" cy="308" rx="34" ry="24" fill="#a85e2e"/>
+  <!-- chickpeas + raisins -->
+  <g fill="#e3c06a" stroke="#a87c2e" stroke-width="2">
+    <circle cx="330" cy="450" r="11"/><circle cx="470" cy="450" r="11"/><circle cx="400" cy="455" r="11"/>
+  </g>
+  <g fill="#5e2f14"><circle cx="360" cy="445" r="7"/><circle cx="440" cy="445" r="7"/></g>
+  <!-- egg on top -->
+  <ellipse cx="400" cy="272" rx="26" ry="20" fill="#fbf7ec" stroke="#d8cfc0" stroke-width="3"/>
+  <ellipse cx="400" cy="274" rx="12" ry="10" fill="#e8a83c"/>
+  <g stroke="#f5eee0" stroke-width="6" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M340,220 q10,-18 0,-36"/><path d="M460,220 q10,-18 0,-36"/>
+  </g>
+</svg>

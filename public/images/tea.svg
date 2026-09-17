@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="أتاي مغربي">
+  <defs>
+    <radialGradient id="abg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#2e4a5e"/><stop offset="1" stop-color="#10161c"/>
+    </radialGradient>
+    <linearGradient id="asilver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a94a0"/><stop offset="0.5" stop-color="#e3e8ef"/><stop offset="1" stop-color="#6e7885"/>
+    </linearGradient>
+    <linearGradient id="atea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d493"/><stop offset="1" stop-color="#b45e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#abg)"/>
+  <rect y="420" width="800" height="180" fill="#274e6d"/>
+  <rect y="420" width="800" height="14" fill="#c6a15b" opacity="0.6"/>
+  <!-- tray -->
+  <ellipse cx="400" cy="470" rx="280" ry="60" fill="url(#asilver)"/>
+  <ellipse cx="400" cy="462" rx="280" ry="60" fill="#c9cfd8"/>
+  <!-- teapot -->
+  <g>
+    <ellipse cx="330" cy="400" rx="95" ry="70" fill="url(#asilver)"/>
+    <rect x="300" y="300" width="60" height="30" fill="#9aa2ad"/>
+    <ellipse cx="330" cy="300" rx="30" ry="12" fill="#6e7885"/>
+    <circle cx="330" cy="288" r="10" fill="#e3e8ef"/>
+    <path d="M238,380 Q180,360 170,300 Q220,300 245,350 Z" fill="url(#asilver)"/>
+    <path d="M422,370 Q480,380 490,430 Q440,430 420,400 Z" fill="url(#asilver)"/>
+    <circle cx="330" cy="400" r="46" fill="#274e6d" opacity="0.85"/>
+    <path d="M300,400 L360,400 L354,440 L306,440 Z" fill="#7fb2d9" opacity="0.8"/>
+  </g>
+  <!-- pouring stream -->
+  <path d="M482,432 Q490,470 486,500" stroke="url(#atea)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- glasses -->
+  <g>
+    <path d="M540,430 L600,430 L592,520 L548,520 Z" fill="url(#atea)" opacity="0.95"/>
+    <ellipse cx="570" cy="430" rx="30" ry="9" fill="#fbf0c8"/>
+    <path d="M500,445 L548,445 L542,520 L506,520 Z" fill="url(#atea)" opacity="0.9"/>
+    <ellipse cx="524" cy="445" rx="24" ry="7" fill="#fbf0c8"/>
+  </g>
+  <!-- vase + dates bowl -->
+  <path d="M150,380 Q150,340 180,340 L180,320 L210,320 L210,340 Q240,340 240,380 Q240,470 195,470 Q150,470 150,380 Z" fill="#bc5a32"/>
+  <ellipse cx="640" cy="470" rx="70" ry="22" fill="#8a4a22"/>
+  <g fill="#4e2c12"><ellipse cx="615" cy="458" rx="12" ry="9"/><ellipse cx="642" cy="452" rx="12" ry="9"/><ellipse cx="667" cy="458" rx="12" ry="9"/></g>
+  <g stroke="#f5eee0" stroke-width="6" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M330,250 q10,-20 0,-40"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="الدجاج المحمر">
+  <defs>
+    <radialGradient id="pbg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#40372c"/><stop offset="1" stop-color="#14110d"/>
+    </radialGradient>
+    <radialGradient id="pchick" cx="0.42" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#f2b45e"/><stop offset="0.5" stop-color="#c97a2e"/><stop offset="1" stop-color="#6e3413"/>
+    </radialGradient>
+    <radialGradient id="psauce" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8a5a26"/><stop offset="1" stop-color="#4e2c10"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pbg)"/>
+  <ellipse cx="400" cy="510" rx="310" ry="36" fill="#000" opacity="0.5"/>
+  <ellipse cx="400" cy="470" rx="300" ry="85" fill="#d8cfc0"/>
+  <ellipse cx="400" cy="460" rx="300" ry="85" fill="#fbf7ec"/>
+  <ellipse cx="400" cy="460" rx="255" ry="68" fill="url(#psauce)" opacity="0.9"/>
+  <!-- chicken pieces -->
+  <ellipse cx="320" cy="420" rx="105" ry="72" fill="url(#pchick)"/>
+  <ellipse cx="500" cy="430" rx="95" ry="66" fill="url(#pchick)"/>
+  <ellipse cx="300" cy="400" rx="60" ry="38" fill="#e8a95c" opacity="0.8"/>
+  <ellipse cx="485" cy="410" rx="52" ry="34" fill="#e8a95c" opacity="0.8"/>
+  <g fill="#5e2f14" opacity="0.45">
+    <circle cx="280" cy="420" r="7"/><circle cx="330" cy="445" r="6"/><circle cx="510" cy="440" r="7"/><circle cx="540" cy="415" r="6"/>
+  </g>
+  <!-- lemon slices -->
+  <g>
+    <ellipse cx="400" cy="380" rx="42" ry="16" fill="#f6e27a" stroke="#d9a92e" stroke-width="4"/>
+    <ellipse cx="400" cy="380" rx="30" ry="10" fill="#fbf0a8"/>
+    <path d="M400,370 L400,390 M378,380 L422,380" stroke="#d9a92e" stroke-width="2"/>
+    <ellipse cx="585" cy="470" rx="36" ry="14" fill="#f6e27a" stroke="#d9a92e" stroke-width="4"/>
+  </g>
+  <!-- chickpeas -->
+  <g fill="#e3c06a" stroke="#a87c2e" stroke-width="2">
+    <circle cx="230" cy="470" r="13"/><circle cx="262" cy="488" r="13"/><circle cx="300" cy="498" r="13"/>
+    <circle cx="345" cy="505" r="13"/><circle cx="470" cy="505" r="13"/><circle cx="515" cy="498" r="13"/>
+    <circle cx="555" cy="488" r="13"/><circle cx="590" cy="470" r="11"/><circle cx="205" cy="450" r="11"/>
+  </g>
+  <!-- herbs + olives -->
+  <g fill="#4c6b2e"><ellipse cx="360" cy="360" rx="16" ry="9"/><ellipse cx="520" cy="390" rx="14" ry="8"/></g>
+  <circle cx="250" cy="430" r="12" fill="#5e2f14"/><circle cx="560" cy="440" r="12" fill="#5e2f14"/>
+  <circle cx="250" cy="430" r="4" fill="#c9a06a"/><circle cx="560" cy="440" r="4" fill="#c9a06a"/>
+  <g stroke="#f5eee0" stroke-width="6" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M340,290 q10,-20 0,-40"/><path d="M460,295 q10,-20 0,-40"/>
+  </g>
+</svg>

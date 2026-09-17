@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="شعار مدفونة سجلماسة">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8d194"/>
+      <stop offset="0.5" stop-color="#c6a15b"/>
+      <stop offset="1" stop-color="#8f6f2c"/>
+    </linearGradient>
+    <radialGradient id="sky" cx="0.5" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#7fb2d9"/>
+      <stop offset="0.55" stop-color="#3f7bab"/>
+      <stop offset="1" stop-color="#274e6d"/>
+    </radialGradient>
+    <radialGradient id="bread" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#f0c078"/>
+      <stop offset="0.55" stop-color="#c97a3a"/>
+      <stop offset="1" stop-color="#7a3f1c"/>
+    </radialGradient>
+    <path id="arcTop" d="M 90,300 A 210,210 0 0 1 510,300"/>
+    <path id="arcBottom" d="M 105,300 A 195,195 0 0 0 495,300"/>
+  </defs>
+
+  <circle cx="300" cy="300" r="292" fill="#faf5ea"/>
+  <circle cx="300" cy="300" r="286" fill="none" stroke="url(#gold)" stroke-width="10"/>
+  <circle cx="300" cy="300" r="268" fill="none" stroke="url(#gold)" stroke-width="2" stroke-dasharray="6 5" opacity="0.8"/>
+
+  <text font-family="Georgia, serif" font-size="34" font-weight="bold" letter-spacing="6" fill="#9c7c2e">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">DEPUIS 2016</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="30" font-weight="bold" letter-spacing="4" fill="#9c7c2e">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">PATRIMOINE &amp; GOUT</textPath>
+  </text>
+
+  <circle cx="300" cy="305" r="172" fill="url(#sky)"/>
+  <circle cx="300" cy="305" r="172" fill="none" stroke="url(#gold)" stroke-width="5"/>
+  <!-- dunes -->
+  <path d="M132,360 Q220,300 300,345 T468,350 L468,477 L132,477 Z" fill="#c9a06a" opacity="0.85"/>
+  <path d="M132,395 Q240,345 340,385 T468,390 L468,477 L132,477 Z" fill="#8a5a30" opacity="0.9"/>
+  <!-- moroccan star -->
+  <g transform="translate(300,185)" fill="none" stroke="#c1272d" stroke-width="7">
+    <path d="M0,-34 L10,-10 L36,-10 L15,6 L23,32 L0,16 L-23,32 L-15,6 L-36,-10 L-10,-10 Z"/>
+  </g>
+  <rect x="262" y="232" width="76" height="10" fill="#c1272d"/>
+  <!-- plate + madfouna -->
+  <ellipse cx="300" cy="432" rx="118" ry="26" fill="#e8dabd"/>
+  <ellipse cx="300" cy="424" rx="118" ry="26" fill="#f7efdc" stroke="#c6a15b" stroke-width="3"/>
+  <ellipse cx="300" cy="400" rx="92" ry="52" fill="url(#bread)"/>
+  <ellipse cx="300" cy="388" rx="66" ry="34" fill="#e8a95c" opacity="0.8"/>
+  <g fill="#6b3a1c" opacity="0.55">
+    <circle cx="255" cy="392" r="5"/><circle cx="285" cy="378" r="4"/><circle cx="318" cy="390" r="5"/>
+    <circle cx="345" cy="404" r="4"/><circle cx="272" cy="410" r="4"/><circle cx="305" cy="414" r="5"/>
+  </g>
+  <!-- steam -->
+  <g stroke="#ffffff" stroke-width="5" fill="none" opacity="0.65" stroke-linecap="round">
+    <path d="M260,330 q8,-16 0,-32 q-8,-14 0,-28"/>
+    <path d="M300,325 q8,-16 0,-32 q-8,-14 0,-28"/>
+    <path d="M340,330 q8,-16 0,-32 q-8,-14 0,-28"/>
+  </g>
+
+  <text x="300" y="520" text-anchor="middle" font-family="serif" font-size="44" font-weight="bold" fill="#5e4a1f">مدفونة سجلماسة</text>
+  <text x="300" y="548" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="3" fill="#9c7c2e">MEKNES • MOROCCO</text>
+</svg>

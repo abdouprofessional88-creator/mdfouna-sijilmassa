@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="المدفونة السجلماسة">
+  <defs>
+    <radialGradient id="mbg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#3a3129"/><stop offset="1" stop-color="#14110d"/>
+    </radialGradient>
+    <radialGradient id="mbread" cx="0.5" cy="0.36" r="0.8">
+      <stop offset="0" stop-color="#f2c47e"/><stop offset="0.55" stop-color="#cf7f3c"/><stop offset="1" stop-color="#7a3f1c"/>
+    </radialGradient>
+    <pattern id="mweave" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="13" r="11" fill="none" stroke="#8a6a45" stroke-width="2" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#mbg)"/>
+  <rect width="800" height="600" fill="url(#mweave)" opacity="0.25"/>
+  <ellipse cx="400" cy="500" rx="300" ry="42" fill="#000" opacity="0.5"/>
+  <!-- woven tray -->
+  <ellipse cx="400" cy="470" rx="290" ry="80" fill="#a87c3e"/>
+  <ellipse cx="400" cy="462" rx="290" ry="80" fill="#c9a06a"/>
+  <ellipse cx="400" cy="462" rx="252" ry="66" fill="none" stroke="#7a5a2e" stroke-width="4" stroke-dasharray="14 8" opacity="0.7"/>
+  <ellipse cx="400" cy="462" rx="200" ry="50" fill="none" stroke="#7a5a2e" stroke-width="3" stroke-dasharray="10 8" opacity="0.5"/>
+  <!-- plate -->
+  <ellipse cx="400" cy="440" rx="225" ry="62" fill="#e8dabd"/>
+  <ellipse cx="400" cy="432" rx="225" ry="62" fill="#fbf4e4"/>
+  <!-- madfouna dome -->
+  <ellipse cx="400" cy="380" rx="185" ry="105" fill="url(#mbread)"/>
+  <ellipse cx="400" cy="360" rx="130" ry="70" fill="#e8a95c" opacity="0.75"/>
+  <ellipse cx="400" cy="345" rx="80" ry="42" fill="#f6d493" opacity="0.7"/>
+  <g fill="#5e2f14" opacity="0.5">
+    <circle cx="300" cy="370" r="9"/><circle cx="350" cy="340" r="7"/><circle cx="410" cy="352" r="9"/>
+    <circle cx="460" cy="380" r="7"/><circle cx="330" cy="405" r="8"/><circle cx="395" cy="410" r="9"/>
+    <circle cx="480" cy="410" r="6"/><circle cx="275" cy="405" r="6"/><circle cx="440" cy="330" r="6"/>
+  </g>
+  <g fill="#f6d493" opacity="0.6">
+    <circle cx="320" cy="350" r="3"/><circle cx="380" cy="330" r="3"/><circle cx="430" cy="365" r="3"/><circle cx="360" cy="390" r="3"/>
+  </g>
+  <!-- cut wedge showing filling -->
+  <path d="M400,380 L520,430 Q470,470 400,470 Z" fill="#4e2c12"/>
+  <path d="M408,392 L500,430 Q460,458 410,458 Z" fill="#8a5a2e"/>
+  <circle cx="445" cy="432" r="6" fill="#3a2410"/><circle cx="462" cy="440" r="5" fill="#3a2410"/><circle cx="430" cy="444" r="5" fill="#3a2410"/>
+  <!-- steam -->
+  <g stroke="#f5eee0" stroke-width="7" fill="none" opacity="0.35" stroke-linecap="round">
+    <path d="M330,250 q12,-24 0,-48 q-12,-22 0,-44"/>
+    <path d="M400,240 q12,-24 0,-48 q-12,-22 0,-44"/>
+    <path d="M470,250 q12,-24 0,-48 q-12,-22 0,-44"/>
+  </g>
+  <!-- lantern glow -->
+  <circle cx="105" cy="120" r="46" fill="#e8a83c" opacity="0.25"/>
+  <circle cx="105" cy="120" r="22" fill="#f6d493" opacity="0.8"/>
+</svg>

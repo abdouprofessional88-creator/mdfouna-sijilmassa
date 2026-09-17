@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="مائدة مدفونة سجلماسة">
+  <defs>
+    <radialGradient id="hbg" cx="0.62" cy="0.3" r="1.1">
+      <stop offset="0" stop-color="#3a2d20"/><stop offset="0.6" stop-color="#1c1611"/><stop offset="1" stop-color="#0e0b08"/>
+    </radialGradient>
+    <radialGradient id="hbread" cx="0.5" cy="0.36" r="0.8">
+      <stop offset="0" stop-color="#f2c47e"/><stop offset="0.55" stop-color="#cf7f3c"/><stop offset="1" stop-color="#6e3413"/>
+    </radialGradient>
+    <radialGradient id="hglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8a83c" stop-opacity="0.55"/><stop offset="1" stop-color="#e8a83c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#hbg)"/>
+  <!-- lantern glows -->
+  <circle cx="150" cy="150" r="130" fill="url(#hglow)"/>
+  <circle cx="1050" cy="120" r="110" fill="url(#hglow)"/>
+  <g stroke="#c6a15b" stroke-width="4" fill="none">
+    <line x1="150" y1="0" x2="150" y2="90"/><path d="M125,90 L175,90 L165,170 L135,170 Z"/>
+    <line x1="1050" y1="0" x2="1050" y2="70"/><path d="M1028,70 L1072,70 L1063,140 L1037,140 Z"/>
+  </g>
+  <circle cx="150" cy="135" r="16" fill="#ffd97a"/><circle cx="1050" cy="110" r="14" fill="#ffd97a"/>
+  <!-- side tanjia silhouette -->
+  <path d="M880,420 Q880,380 940,380 Q1000,380 1000,420 L985,460 Q1020,510 1015,580 Q1010,660 940,690 Q870,660 865,580 Q860,510 895,460 Z" fill="#4a2c14" opacity="0.9"/>
+  <ellipse cx="940" cy="388" rx="60" ry="20" fill="#8a6a45" opacity="0.8"/>
+  <!-- main tray + madfouna -->
+  <ellipse cx="520" cy="700" rx="380" ry="52" fill="#000" opacity="0.55"/>
+  <ellipse cx="520" cy="660" rx="365" ry="95" fill="#a87c3e"/>
+  <ellipse cx="520" cy="650" rx="365" ry="95" fill="#c9a06a"/>
+  <ellipse cx="520" cy="650" rx="315" ry="78" fill="none" stroke="#7a5a2e" stroke-width="5" stroke-dasharray="16 10" opacity="0.7"/>
+  <ellipse cx="520" cy="620" rx="290" ry="75" fill="#fbf4e4"/>
+  <ellipse cx="520" cy="540" rx="235" ry="130" fill="url(#hbread)"/>
+  <ellipse cx="520" cy="515" rx="165" ry="88" fill="#e8a95c" opacity="0.75"/>
+  <g fill="#5e2f14" opacity="0.5">
+    <circle cx="400" cy="530" r="10"/><circle cx="460" cy="490" r="8"/><circle cx="540" cy="505" r="10"/><circle cx="600" cy="540" r="8"/><circle cx="480" cy="570" r="9"/><circle cx="620" cy="575" r="7"/>
+  </g>
+  <!-- chickpeas + lemon around -->
+  <g fill="#e3c06a" stroke="#a87c2e" stroke-width="2">
+    <circle cx="300" cy="630" r="14"/><circle cx="340" cy="652" r="14"/><circle cx="700" cy="652" r="14"/><circle cx="740" cy="628" r="14"/>
+  </g>
+  <ellipse cx="640" cy="600" rx="44" ry="17" fill="#f6e27a" stroke="#d9a92e" stroke-width="4"/>
+  <!-- steam -->
+  <g stroke="#f5eee0" stroke-width="8" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M440,380 q14,-28 0,-56 q-14,-26 0,-52"/>
+    <path d="M520,370 q14,-28 0,-56 q-14,-26 0,-52"/>
+    <path d="M600,380 q14,-28 0,-56 q-14,-26 0,-52"/>
+  </g>
+</svg>

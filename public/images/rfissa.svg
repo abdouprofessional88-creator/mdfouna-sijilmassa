@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="الرفيسة بالتريد">
+  <defs>
+    <radialGradient id="rbg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#43382b"/><stop offset="1" stop-color="#14110d"/>
+    </radialGradient>
+    <linearGradient id="rtrid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecd3a0"/><stop offset="1" stop-color="#c9a06a"/>
+    </linearGradient>
+    <radialGradient id="rchick" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#e8a95c"/><stop offset="1" stop-color="#7a3f1c"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#rbg)"/>
+  <ellipse cx="400" cy="515" rx="310" ry="34" fill="#000" opacity="0.5"/>
+  <!-- clay platter -->
+  <ellipse cx="400" cy="480" rx="300" ry="80" fill="#8a4a22"/>
+  <ellipse cx="400" cy="470" rx="300" ry="80" fill="#a85e2e"/>
+  <ellipse cx="400" cy="470" rx="262" ry="66" fill="#7a3f1c"/>
+  <!-- trid layers -->
+  <g fill="url(#rtrid)" opacity="0.95">
+    <ellipse cx="400" cy="445" rx="240" ry="58" />
+    <ellipse cx="400" cy="430" rx="215" ry="52" fill="#e3c98c"/>
+    <ellipse cx="400" cy="415" rx="185" ry="45" fill="#f0d9a0"/>
+  </g>
+  <g stroke="#a87c3e" stroke-width="3" fill="none" opacity="0.6">
+    <ellipse cx="400" cy="430" rx="190" ry="45"/><ellipse cx="400" cy="418" rx="160" ry="38"/>
+  </g>
+  <!-- broth pool -->
+  <ellipse cx="400" cy="412" rx="150" ry="36" fill="#8a5a26" opacity="0.85"/>
+  <!-- chicken -->
+  <ellipse cx="320" cy="390" rx="80" ry="55" fill="url(#rchick)"/>
+  <ellipse cx="490" cy="395" rx="75" ry="52" fill="url(#rchick)"/>
+  <!-- eggs -->
+  <g>
+    <ellipse cx="400" cy="350" rx="34" ry="26" fill="#fbf7ec" stroke="#d8cfc0" stroke-width="3"/>
+    <ellipse cx="400" cy="352" rx="16" ry="13" fill="#e8a83c"/>
+    <ellipse cx="245" cy="430" rx="30" ry="23" fill="#fbf7ec" stroke="#d8cfc0" stroke-width="3"/>
+    <ellipse cx="245" cy="432" rx="14" ry="11" fill="#e8a83c"/>
+    <ellipse cx="560" cy="430" rx="30" ry="23" fill="#fbf7ec" stroke="#d8cfc0" stroke-width="3"/>
+    <ellipse cx="560" cy="432" rx="14" ry="11" fill="#e8a83c"/>
+  </g>
+  <!-- lentils + fenugreek -->
+  <g fill="#6b4a22">
+    <circle cx="360" cy="420" r="8"/><circle cx="385" cy="432" r="8"/><circle cx="440" cy="425" r="8"/><circle cx="465" cy="438" r="7"/><circle cx="335" cy="438" r="7"/>
+  </g>
+  <!-- dates + walnuts -->
+  <ellipse cx="300" cy="360" rx="14" ry="20" fill="#4e2c12"/>
+  <ellipse cx="510" cy="360" rx="14" ry="20" fill="#4e2c12"/>
+  <circle cx="455" cy="370" r="10" fill="#8a6a45"/><circle cx="355" cy="368" r="10" fill="#8a6a45"/>
+  <!-- tomato + pepper -->
+  <circle cx="480" cy="330" r="14" fill="#c1272d"/><circle cx="330" cy="330" r="14" fill="#c1272d"/>
+  <g stroke="#f5eee0" stroke-width="6" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M370,270 q10,-20 0,-40"/><path d="M440,270 q10,-20 0,-40"/>
+  </g>
+</svg>

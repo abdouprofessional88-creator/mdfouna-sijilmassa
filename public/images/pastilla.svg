@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="بسطيلة الدجاج">
+  <defs>
+    <radialGradient id="bbg" cx="0.5" cy="0.3" r="1">
+      <stop offset="0" stop-color="#3d342a"/><stop offset="1" stop-color="#100d0a"/>
+    </radialGradient>
+    <radialGradient id="bpie" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#fbf3df"/><stop offset="0.7" stop-color="#e3c98c"/><stop offset="1" stop-color="#a87c3e"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bbg)"/>
+  <ellipse cx="400" cy="505" rx="290" ry="34" fill="#000" opacity="0.5"/>
+  <ellipse cx="400" cy="470" rx="280" ry="72" fill="#1c1a18"/>
+  <ellipse cx="400" cy="462" rx="280" ry="72" fill="#fbf7ec"/>
+  <ellipse cx="400" cy="455" rx="245" ry="62" fill="#e8dabd"/>
+  <!-- pie -->
+  <ellipse cx="400" cy="400" rx="210" ry="105" fill="url(#bpie)"/>
+  <ellipse cx="400" cy="385" rx="170" ry="80" fill="#fdf8ea" opacity="0.9"/>
+  <!-- cinnamon lattice -->
+  <g stroke="#8a5a2e" stroke-width="5" opacity="0.75">
+    <path d="M230,370 Q400,420 570,365"/><path d="M235,400 Q400,450 565,395"/><path d="M250,430 Q400,475 550,425"/>
+    <path d="M300,320 Q330,420 310,480"/><path d="M400,315 Q400,420 400,485"/><path d="M500,320 Q470,420 490,480"/>
+  </g>
+  <!-- almonds -->
+  <g fill="#c9a06a" stroke="#8a5a2e" stroke-width="2">
+    <ellipse cx="330" cy="370" rx="14" ry="10" transform="rotate(-20 330 370)"/>
+    <ellipse cx="400" cy="360" rx="14" ry="10"/><ellipse cx="470" cy="372" rx="14" ry="10" transform="rotate(20 470 372)"/>
+    <ellipse cx="365" cy="410" rx="14" ry="10" transform="rotate(-12 365 410)"/><ellipse cx="440" cy="410" rx="14" ry="10" transform="rotate(12 440 410)"/>
+  </g>
+  <!-- powdered sugar dust -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="290" cy="350" r="5"/><circle cx="350" cy="335" r="6"/><circle cx="430" cy="338" r="5"/><circle cx="490" cy="355" r="6"/><circle cx="460" cy="430" r="5"/><circle cx="340" cy="435" r="5"/>
+  </g>
+  <!-- lemon twist + mint -->
+  <path d="M560,470 q30,-10 20,-40 q-8,-20 15,-28" fill="none" stroke="#e8c93c" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="235" cy="470" rx="20" ry="10" fill="#4c6b2e" transform="rotate(-25 235 470)"/>
+</svg>

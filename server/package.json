@@ -1,0 +1,26 @@
+{
+  "name": "sijilmassa-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mdfouna Sijilmassa reservation platform API — Express + MySQL (mysql2)",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed.js",
+    "purge-demo": "node src/db/purge-demo.js",
+    "setup": "node src/db/migrate.js && node src/db/seed.js",
+    "test:db": "node src/db/test-connection.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "zod": "^3.23.8"
+  }
+}

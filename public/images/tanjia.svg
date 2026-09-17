@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="الطنجية المراكشية">
+  <defs>
+    <radialGradient id="tbg" cx="0.5" cy="0.25" r="1">
+      <stop offset="0" stop-color="#3a3129"/><stop offset="1" stop-color="#100d0a"/>
+    </radialGradient>
+    <linearGradient id="tclay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a3f1c"/><stop offset="0.45" stop-color="#c47a3e"/><stop offset="0.6" stop-color="#e09a55"/><stop offset="1" stop-color="#6b3418"/>
+    </linearGradient>
+    <radialGradient id="tfire" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd97a"/><stop offset="0.5" stop-color="#e07a2e"/><stop offset="1" stop-color="#7a1e00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#tbg)"/>
+  <ellipse cx="400" cy="560" rx="260" ry="26" fill="#000" opacity="0.55"/>
+  <!-- fire glow + coals -->
+  <ellipse cx="400" cy="520" rx="230" ry="60" fill="url(#tfire)" opacity="0.8"/>
+  <g>
+    <ellipse cx="300" cy="525" rx="26" ry="14" fill="#2b2118"/><ellipse cx="360" cy="535" rx="30" ry="15" fill="#3a2a1c"/>
+    <ellipse cx="430" cy="528" rx="28" ry="14" fill="#241a12"/><ellipse cx="490" cy="535" rx="26" ry="13" fill="#3a2a1c"/>
+    <ellipse cx="340" cy="518" rx="10" ry="6" fill="#ff9a3c"/><ellipse cx="450" cy="520" rx="12" ry="7" fill="#ffb14e"/><ellipse cx="395" cy="528" rx="9" ry="5" fill="#ff7a1e"/>
+  </g>
+  <!-- tanjia urn -->
+  <path d="M330,150 Q330,120 400,120 Q470,120 470,150 L455,190 Q500,240 505,330 Q510,450 400,505 Q290,450 295,330 Q300,240 345,190 Z" fill="url(#tclay)"/>
+  <path d="M355,190 Q400,175 445,190 L440,230 Q400,218 360,230 Z" fill="#5e2f14" opacity="0.6"/>
+  <ellipse cx="400" cy="340" rx="86" ry="110" fill="#8a4a22" opacity="0.35"/>
+  <g stroke="#5e2f14" stroke-width="4" fill="none" opacity="0.6">
+    <path d="M310,300 Q400,330 490,300"/><path d="M308,350 Q400,382 492,350"/><path d="M315,400 Q400,430 485,400"/>
+  </g>
+  <!-- sealed dough cap -->
+  <ellipse cx="400" cy="128" rx="72" ry="26" fill="#d9b77c"/>
+  <ellipse cx="400" cy="120" rx="72" ry="26" fill="#ecd3a0"/>
+  <path d="M332,118 Q400,150 468,118" fill="none" stroke="#8a5a2e" stroke-width="5"/>
+  <path d="M345,112 Q400,138 455,112" fill="none" stroke="#8a5a2e" stroke-width="3" opacity="0.7"/>
+  <!-- rope -->
+  <path d="M330,140 Q400,168 470,140" fill="none" stroke="#4e2c12" stroke-width="7"/>
+  <!-- steam -->
+  <g stroke="#f5eee0" stroke-width="6" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M370,80 q10,-18 0,-36"/><path d="M410,78 q10,-18 0,-36"/>
+  </g>
+  <!-- hanging lantern -->
+  <line x1="660" y1="0" x2="660" y2="70" stroke="#3a2a1c" stroke-width="5"/>
+  <path d="M635,70 L685,70 L672,150 L648,150 Z" fill="#274e6d" opacity="0.9"/>
+  <circle cx="660" cy="115" r="14" fill="#ffd97a" opacity="0.9"/>
+  <circle cx="660" cy="115" r="34" fill="#e8a83c" opacity="0.2"/>
+</svg>
