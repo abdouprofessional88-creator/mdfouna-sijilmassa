@@ -1,4 +1,6 @@
-const BASE = (import.meta.env.VITE_API_URL || 'http://localhost:4000').replace(/\/$/, '')
+// Same-origin by default in production (API serves the frontend);
+// localhost:4000 fallback only in dev.
+const BASE = (import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:4000' : '')).replace(/\/$/, '')
 
 export class ApiError extends Error {
   constructor(status, data) {

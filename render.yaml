@@ -1,0 +1,40 @@
+services:
+  # ── MySQL (private, persistent disk required) ──
+  - type: pserv
+    name: sijilmassa-mysql
+    runtime: docker
+    image:
+      url: mysql:8.0
+    disk:
+      name: mysql-data
+      mountPath: /var/lib/mysql
+      sizeGB: 1
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+      - key: MYSQL_DATABASE
+        value: sijilmassa_db
+      - key: MYSQL_USER
+        value: sijilmassa
+      - key: MYSQL_PASSWORD
+        generateValue: true
+
+  # ── App: API + frontend in one service (SERVE_FRONTEND=1) ──
+  - type: web
+    name: mdfouna-sijilmassa
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: sijilmassa-mysql
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_ORIGINS
+        value: https://mdfouna-sijilmassa.onrender.com
+      - key: SEED_DEMO
+        value: 0

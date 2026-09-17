@@ -1,4 +1,7 @@
 import express from 'express'
+import path from 'node:path'
+import fs from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import { env } from './config/env.js'
@@ -26,6 +29,17 @@ export function createApp() {
   app.use('/api', writeLimiter, deliveryRoutes)
   app.use('/api', writeLimiter, paymentRoutes)
   app.use('/api', writeLimiter, apiRoutes)
+
+  // Single-service deploy: serve the built frontend (SERVE_FRONTEND=1 + /dist present)
+  const here = path.dirname(fileURLToPath(import.meta.url))
+  const dist = path.join(here, '..', '..', 'dist')
+  if (process.env.SERVE_FRONTEND === '1' && fs.existsSync(path.join(dist, 'index.html'))) {
+    app.use(express.static(dist))
+    app.get('*', (req, res, next) => {
+      if (req.path.startsWith('/api')) return next()
+      res.sendFile(path.join(dist, 'index.html'))
+    })
+  }
 
   app.use((_req, res) => res.status(404).json({ error: 'غير موجود' }))
   app.use(errorHandler)
