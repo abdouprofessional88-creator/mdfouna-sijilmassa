@@ -12,6 +12,7 @@ import AuthView from './components/auth/AuthView.jsx'
 import AccountView from './components/account/AccountView.jsx'
 import StaffDashboard from './components/staff/StaffDashboard.jsx'
 import { CartDrawer, CartToaster, StickyCart } from './components/order/CartDrawer.jsx'
+import DemoBanner from './components/DemoBanner.jsx'
 import { CheckoutView, OrderSuccessView } from './components/order/Checkout.jsx'
 import { ReserveView, ReserveSuccessView } from './components/reserve/ReserveView.jsx'
 import { AuthProvider } from './auth/AuthContext.jsx'
@@ -37,6 +38,7 @@ function Shell() {
 
   return (
     <>
+      <DemoBanner />
       <Header view={view} onNav={setView} />
       <main key={view} className="view-fade">
         {view === 'home' && (
