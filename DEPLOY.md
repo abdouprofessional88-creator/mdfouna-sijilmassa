@@ -3,7 +3,36 @@
 ## الفكرة (مهم)
 
 GitHub **لا يشغّل سيرفرات** — لذلك الموقع الكامل (واجهة + API + MySQL)
-يُستضاف على **Render** (يقرأ `render.yaml` تلقائياً)، والكود يبقى على GitHub.
+يُستضاف خارجياً، والكود يبقى على GitHub.
+
+## الخيار 1: مجاني بالكامل (موصى به للتجربة)
+
+ثلاث خدمات مجانية، كل واحدة تربطها بـ GitHub:
+
+| الطبقة | الخدمة المجانية | ملاحظة |
+|---|---|---|
+| الواجهة | **Cloudflare Pages** | مجاني + يعمل مع المستودعات الخاصة |
+| الـ API | **Koyeb** (أو Render) | مجاني، ينام بعد الخمول |
+| MySQL | **Aiven** (خطة Free) | MySQL حقيقي مجاني |
+
+### الخطوات
+1. **MySQL على Aiven**: حساب → Create MySQL (Free plan) → انسخ **Connection URI**
+   (شكله `mysql://user:pass@host:port/db`).
+2. **API على Koyeb**: حساب مربوط بـ GitHub → Create App من المستودع →
+   - Builder: Dockerfile، مسار `server/Dockerfile`
+   - المتغيرات: `DATABASE_URL` (الصقه من Aiven)، `JWT_SECRET` (نص طويل عشوائي)،
+     `CLIENT_ORIGINS` (رابط واجهتك لاحقاً)، `SEED_DEMO=0`، `NODE_ENV=production`
+   - بعد الإقلاع نفّذ مرة واحدة (Console داخل Koyeb):
+     `npm run migrate` ثم `SEED_DEMO=1 npm run seed`
+3. **الواجهة على Cloudflare Pages**: حساب → Pages → ربط المستودع →
+   Build: `npm run build` + Output: `dist` + متغير `VITE_API_URL` = رابط الـ API.
+4. ارجع لـ Koyeb وحدّث `CLIENT_ORIGINS` برابط Cloudflare، وأعد النشر.
+5. ادخل بحساب المدير المؤقت وغيّر كلمته فوراً، ثم احذف حسابات الديمو.
+
+> تنبيه: الخدمات المجانية تنام بعد الخمول (أول فتح بطيء ~30 ثانية) —
+> مقبول للتجربة والعرض، لا للزبناء الحقيقيين.
+
+## الخيار 2: Render بنقرة واحدة (قد يتطلب دفعاً للقرص)
 
 ## خطوات النشر على Render (مرة واحدة)
 
