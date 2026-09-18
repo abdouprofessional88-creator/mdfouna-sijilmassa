@@ -84,6 +84,65 @@
   .sticky-cart.is-show { display: inline-flex; }
 }
 
+/* ── Mobile-first polish (phones ≤720px) ─── */
+@media (max-width: 720px) {
+  .container { width: calc(100% - 28px); }
+  .display { font-size: clamp(1.9rem, 9vw, 2.4rem); }
+  .h2 { font-size: clamp(1.5rem, 6.5vw, 1.8rem); }
+  .lead { font-size: 0.98rem; }
+  .hero { padding-bottom: 70px; min-height: auto; }
+  .hero__grid { gap: 34px; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; }
+  .hero__frame { padding: 16px; border-radius: 20px; }
+  .hero__main img { height: 210px; }
+  .hero__logo { width: 68px; height: 68px; }
+  .tile img { height: 112px; }
+  .tile figcaption strong { font-size: 13.5px; }
+  .logo__text strong { font-size: 17px; }
+  .logo__text small { display: none; }
+  .logo__img { width: 40px !important; height: 40px !important; }
+  .header__cart { width: 40px; height: 40px; }
+  .header__inner { gap: 10px; }
+  .section-head { margin-bottom: 28px; }
+  .dish__art { height: 170px; }
+  .mcard__media { height: 170px; }
+  .mcard__desc { min-height: 0; }
+  .mcard__foot { flex-direction: column; align-items: stretch; gap: 10px; }
+  .mcard__actions { display: flex; gap: 8px; }
+  .mcard__actions .btn, .mcard__actions .mcard__btn, .mcard__actions .mcard__add { flex: 1; }
+  .menux__row { flex-direction: column; align-items: stretch; }
+  .menux__sort { justify-content: space-between; }
+  .menux__sort select { flex: 1; }
+  .menux__avail { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .menux__avail button { padding: 9px 6px; font-size: 12.5px; }
+  .pick { width: 132px; }
+  .pick img { height: 82px; }
+  .auth__card { padding: 26px 20px; }
+  .checkout__block { padding: 18px 16px; }
+  .checkout__summary { padding: 20px 18px; }
+  .mapwrap__map { height: 250px; }
+  .mapwrap__bar { flex-direction: column; }
+  .mapwrap__gps { width: 100%; }
+  .dash__cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dash__card { padding: 14px; }
+  .dash__card strong { font-size: 24px; }
+  .dash__table { font-size: 12.5px; min-width: 640px; }
+  .dash__table td, .dash__table th { padding: 10px 12px; }
+  .dash__form { padding: 16px; }
+  .dash__form-grid { grid-template-columns: 1fr; }
+  .acct__res { flex-direction: column; }
+  .mmodal { padding: 0; align-items: end; }
+  .offer__art { height: 160px; }
+  .intro__figure img { height: 220px; }
+  .contact__card { padding: 24px 20px; }
+  .reserve__form { max-width: 100%; }
+  .sticky-cart { bottom: calc(12px + env(safe-area-inset-bottom, 0px)); font-size: 14px; padding: 11px 18px; }
+  .toast { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); font-size: 13.5px; }
+  .footer__bottom { flex-direction: column; }
+  .demo-banner { font-size: 12px; padding: 8px 12px; }
+}
+
 /* offers dates */
 .offer__dates { font-size: 12.5px; color: var(--brass-600); font-weight: 600; margin-top: 6px; }
 
@@ -152,6 +211,20 @@
 .tables-pick__grid > button.is-on { background: var(--charcoal-900); color: var(--cream-100); border-color: var(--charcoal-900); }
 .tables-pick__grid > button.is-on small { color: var(--brass-300); }
 .tables-pick__sel { margin-top: 10px; font-weight: 700; color: #2e7a34; font-size: 14.5px; }
+
+/* demo-mode banner (backend unreachable, e.g. static Pages build) */
+.demo-banner {
+  position: fixed; top: 0; inset-inline: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  background: var(--charcoal-900); color: var(--brass-300);
+  font-size: 13.5px; font-weight: 600; padding: 10px 18px;
+  border-bottom: 1px solid rgba(227, 201, 140, 0.4);
+  animation: toastIn 0.3s ease both;
+}
+.demo-banner button {
+  background: none; border: 1px solid rgba(227, 201, 140, 0.5); color: inherit;
+  border-radius: 50%; width: 26px; height: 26px; cursor: pointer; font-size: 12px; flex-shrink: 0;
+}
 
 /* saved addresses */
 .addr-saved { display: grid; gap: 8px; margin-bottom: 12px; }
