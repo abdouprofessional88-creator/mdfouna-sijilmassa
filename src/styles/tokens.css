@@ -101,7 +101,7 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 38px -12px rgba(188, 90, 50, 0.7); }
 .btn-ghost {
   background: rgba(250, 245, 234, 0.08); color: var(--cream-100);
-  border-color: rgba(227, 201, 140, 0.45); backdrop-filter: blur(6px);
+  border-color: rgba(227, 201, 140, 0.45); 
 }
 .btn-ghost:hover { background: rgba(250, 245, 234, 0.16); transform: translateY(-2px); }
 .btn-outline {
